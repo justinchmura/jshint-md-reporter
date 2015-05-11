@@ -38,4 +38,15 @@ console.log();
 
 ### Testing
 
-test
+To run the tests, you have to first make sure the dependencies are installed on
+your system by running:
+
+```bash
+$ npm install
+```
+
+Then run mocha from the command line:
+
+```bash
+$ mocha
+```
