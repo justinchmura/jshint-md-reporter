@@ -1,0 +1,28 @@
+{
+  "name": "jshint-md-reporter",
+  "version": "1.0.0",
+  "description": "JSHint reporter intended for logging errors to a file in markdown.",
+  "main": "index.js",
+  "scripts": {
+    "test": "todo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinchmura/jshint-md-reporter.git"
+  },
+  "keywords": [
+    "jshint",
+    "reporter",
+    "markdown"
+  ],
+  "author": {
+    "name": "Justin Chmura",
+    "email": "justin.chmura@gmail.com",
+    "url": "http://justinchmura.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinchmura/jshint-md-reporter/issues"
+  },
+  "homepage": "https://github.com/justinchmura/jshint-md-reporter"
+}
