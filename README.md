@@ -10,30 +10,48 @@ test
 
 ### Installation
 
-To use `jshint-md-reporter`, you have to have JSHint installed on your system.
-
-```bash
-$ npm install jshint -g
-```
-
-Now install the reporter:
-
 ```bash
 $ npm install jshint-md-reporter --save-dev
 ```
 
 ### Usage
 
-Simple example using [Grunt](http://gruntjs.com):
+Using it with:
 
-```javascript
-console.log();
+#### JSHint CLI
+
+```bash
+jshint --reporter node_modules/jshint-md-reporter/lib/reporter.js file.js
 ```
 
-And [Gulp](http://gulpjs.com/):
+#### [Gulp](http://gulpjs.com/):
 
 ```javascript
-console.log();
+var jshint = require('gulp-jshint');
+
+gulp.task('jshint', function () {
+  gulp.src(['file.js'])
+    .pipe(jshint())
+    .pipe(jshint.reporter('jshint-md-reporter'))
+    .pipe(gulp.dest('jshint-report.md'));
+});
+```
+
+#### [Grunt](http://gruntjs.com):
+
+```javascript
+grunt.initConfig({
+	jshint: {
+		options: {
+			reporter: require('jshint-md-reporter'),
+			reporterOutput: 'jshint-report.md'
+		},
+		target: ['file.js']
+	}
+});
+
+grunt.loadNpmTasks('grunt-contrib-jshint');
+grunt.registerTask('default', ['jshint']);
 ```
 
 ### Testing
@@ -45,8 +63,14 @@ your system by running:
 $ npm install
 ```
 
-Then run mocha from the command line:
+Then run `npm test` from the command line:
 
 ```bash
-$ mocha
+$ npm test
 ```
+
+## Legal Stuff
+
+jshint-md-reporter is Copyright 2015 Justin Chmura. All Rights Reserved.
+
+Distributed under [MIT License](https://tldrlegal.com/license/mit-license).
