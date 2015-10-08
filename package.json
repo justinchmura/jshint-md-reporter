@@ -4,6 +4,7 @@
   "description": "JSHint reporter intended for logging errors to a file in markdown.",
   "main": "index.js",
   "scripts": {
+    "lint": "jshint --exclude node_modules .",
     "test": "mocha"
   },
   "repository": {
@@ -27,6 +28,7 @@
   "homepage": "https://github.com/justinchmura/jshint-md-reporter",
   "devDependencies": {
     "assert": "^1.3.0",
+    "jshint": "^2.8.0",
     "mocha": "^2.2.4"
   },
   "dependencies": {
