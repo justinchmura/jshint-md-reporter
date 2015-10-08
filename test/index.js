@@ -1,9 +1,10 @@
-var R = require('ramda');
-var assert = require('assert');
-var reporter = require('../lib/reporter');
+const fs = require('fs');
+const R = require('ramda');
+const assert = require('assert');
+const reporter = require('../lib/reporter');
 
-var defaultMsg = 'JSHint found no errors.';
-var testReporter = R.pipe(R.flip, R.curry)(reporter.reporter)(true);
+const defaultMsg = fs.readFileSync('./lib/templates/noItems.md');
+const testReporter = R.pipe(R.flip, R.curry)(reporter.reporter)(true);
 
 describe('jshint-md-reporter', function () {
 
