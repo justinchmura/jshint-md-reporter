@@ -6,7 +6,21 @@ to view in any markdown viewer.
 
 ### Example Output
 
-test
+```
+# JSHint Report
+
+### test.js
+
+| Code | Line | Column | Evidence | Reason |
+|:----:|:----:|:------:|----------|--------|
+| W119 | 4 | 18 | window.onload = () => { | 'arrow function syntax (=>)' is only available in ES6 (use esnext option). |
+
+---
+
+#### Summary
+
+Found 1 failures - 0 errors - 1 warnings
+```
 
 ### Installation
 
@@ -27,14 +41,7 @@ jshint --reporter node_modules/jshint-md-reporter/lib/reporter.js file.js
 #### [Gulp](http://gulpjs.com/):
 
 ```javascript
-var jshint = require('gulp-jshint');
-
-gulp.task('jshint', function () {
-  gulp.src(['file.js'])
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-md-reporter'))
-    .pipe(gulp.dest('jshint-report.md'));
-});
+Coming soon...
 ```
 
 #### [Grunt](http://gruntjs.com):
