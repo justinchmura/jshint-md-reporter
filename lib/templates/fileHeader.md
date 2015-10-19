@@ -2,4 +2,3 @@
 
 | Code | Line | Column | Evidence | Reason |
 |:----:|:----:|:------:|----------|--------|
-{items}
