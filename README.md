@@ -4,23 +4,7 @@ This reporter is to be used with JSHint to log errors out to a file
 in markdown. This is useful for creating error files that are easy
 to view in any markdown viewer.
 
-### Example Output
-
-```
-# JSHint Report
-
-### test.js
-
-| Code | Line | Column | Evidence | Reason |
-|:----:|:----:|:------:|----------|--------|
-| W119 | 4 | 18 | window.onload = () => { | 'arrow function syntax (=>)' is only available in ES6 (use esnext option). |
-
----
-
-#### Summary
-
-Found 1 failures - 0 errors - 1 warnings
-```
+### [Example Output](example.md)
 
 ### Installation
 
