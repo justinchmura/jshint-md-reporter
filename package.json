@@ -1,6 +1,6 @@
 {
   "name": "jshint-md-reporter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "JSHint reporter intended for logging errors to a file in markdown.",
   "main": "index.js",
   "scripts": {
