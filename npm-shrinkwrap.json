@@ -1,0 +1,11 @@
+{
+  "name": "jshint-md-reporter",
+  "version": "0.1.0",
+  "dependencies": {
+    "ramda": {
+      "version": "0.13.0",
+      "from": "ramda@>=0.13.0 <0.14.0",
+      "resolved": "http://registry.npmjs.org/ramda/-/ramda-0.13.0.tgz"
+    }
+  }
+}
