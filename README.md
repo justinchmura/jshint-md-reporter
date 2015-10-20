@@ -1,5 +1,7 @@
 ## jshint-md-reporter
 
+[![Build Status](https://travis-ci.org/justinchmura/jshint-md-reporter.svg?branch=master)](https://travis-ci.org/justinchmura/jshint-md-reporter)
+
 This reporter is to be used with JSHint to log errors out to a file
 in markdown. This is useful for creating error files that are easy
 to view in any markdown viewer.
