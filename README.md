@@ -1,6 +1,6 @@
 ## jshint-md-reporter
 
-[![Build Status](https://travis-ci.org/justinchmura/jshint-md-reporter.svg?branch=master)](https://travis-ci.org/justinchmura/jshint-md-reporter)
+[![Build Status](https://travis-ci.org/justinchmura/jshint-md-reporter.svg?branch=master)](https://travis-ci.org/justinchmura/jshint-md-reporter)[![npm version](https://badge.fury.io/js/jshint-md-reporter.svg)](https://badge.fury.io/js/jshint-md-reporter)
 
 This reporter is to be used with JSHint to log errors out to a file
 in markdown. This is useful for creating error files that are easy
